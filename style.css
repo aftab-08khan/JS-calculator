@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins";
+  background: linear-gradient(45deg, #0a0a0a, #3a4452);
+}
+.calculator {
+  border: 1px solid #717377;
+  padding: 20px;
+  border-radius: 16px;
+  background: transparent;
+  box-shadow: 03px 15px rgba(0, 0, 0, 0.2);
+}
+input {
+  width: 320px;
+  border: none;
+  color: #fff;
+  margin: 10px;
+  text-align: right;
+  padding: 24px;
+  font-size: 40px;
+  box-shadow: 0 3px 15px rgba(84, 84, 84, 0.1);
+  background: transparent;
+}
+input::placeholder {
+  color: #fff;
+}
+button {
+  width: 60px;
+  height: 60px;
+  margin: 10px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 50%;
+  background: transparent;
+  color: #fff;
+  background-color: #505050;
+  font-size: 20px;
+  /* box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1); */
+}
+button:hover {
+  background-color: #50505097;
+  transition: all 0.2s ease-in-out;
+}
+.Btn {
+  background-color: #ff9500;
+}
+.Btn:hover {
+  background-color: #ff9500bc;
+  transition: all 0.2s ease-in-out;
+}
+/* #d4d4d2 */
+.delete {
+  background-color: #d4d4d2;
+  color: #333;
+  font-weight: 400;
+}
+.delete:hover {
+  background-color: #f2f2f2;
+  transition: all 0.2s ease-in-out;
+}
+/* MEDIA QUREY */
+@media (max-width: 480px) {
+  input {
+    width: 260px;
+
+    margin: 8px;
+    padding: 20px;
+    font-size: 32px;
+  }
+  button {
+    width: 48px;
+    height: 48px;
+    margin: 8px;
+
+    font-size: 16px;
+  }
+}
